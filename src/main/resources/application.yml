@@ -1,0 +1,13 @@
+
+server:
+  port: 7172
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_account
+    username: web_connect
+    password: web_connect
+
+  jpa:
+    hibernate:
+      ddl-auto: update

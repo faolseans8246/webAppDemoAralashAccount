@@ -10,22 +10,22 @@
 
     <body>
 
-        <div id="login">
-            <form name='form-login'>
+        <div class="login-tag">
+            <form name='form-login' action="/saveLogin/saveToBaseFromLogin" method="post" enctype="multipart/form-data">
                 <span class="fontawesome-user"></span>
-                <input type="text" id="user" placeholder="Username">
+                <input type="text" placeholder="logins" name="logins">
 
                 <span class="fontawesome-lock"></span>
-                <input type="password" id="pass" placeholder="Password">
+                <input type="password" placeholder="parol" name="parol">
 
                 <input type="submit" value="Login">
 
-                <div class="sublink">
-                    <a th:href="@{/head/toHomePage}">Go back</a>
-                    <a th:href="@{/head/goToSignUp}">Sign Up</a>
-                </div>
             </form>
 
+            <div class="sublink">
+                <a th:href="@{/saveLogin/toHomePage}">Go back</a>
+                <a th:href="@{/saveLogin/goToSignUp}">Sign Up</a>
+            </div>
 
         </div>
 

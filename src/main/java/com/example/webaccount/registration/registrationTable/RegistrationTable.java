@@ -79,5 +79,5 @@ public class RegistrationTable implements Serializable {
     public void setConfirm_password(String confirm_password) {
         this.confirm_password = confirm_password;
     }
-    
+
 }

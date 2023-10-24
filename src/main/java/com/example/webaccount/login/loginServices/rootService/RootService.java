@@ -4,6 +4,6 @@ import com.example.webaccount.login.bazaTable.BazaTable;
 
 public interface RootService {
 
-    public void saveRegistr(BazaTable bazaTable);
+    public void saveLogins(String logins, String parol);
 
 }

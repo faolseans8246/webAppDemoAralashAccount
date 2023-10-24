@@ -6,19 +6,20 @@ import com.example.webaccount.login.loginServices.rootService.RootService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class ExtraService implements RootService {
 
     @Autowired
-    private final LoginRepository loginRepository;
-
-    public ExtraService (LoginRepository loginRepository) {
-        this.loginRepository = loginRepository;
-    }
+    private LoginRepository loginRepository;
 
     @Override
-    public void saveRegistr(BazaTable bazaTable) {
+    public void saveLogins(String logins, String parol) {
+
+        BazaTable bazaTable = new BazaTable(logins, parol);
         this.loginRepository.save(bazaTable);
+
     }
 
 }

@@ -27,12 +27,12 @@ p {
 
 after { clear: both; }
 
-#login {
+.login-tag {
     margin: 50px auto;
     width: 320px;
 }
 
-#login form {
+.login-tag form {
     margin: auto;
     padding: 22px 22px 22px 22px;
     width: 100%;
@@ -42,7 +42,7 @@ after { clear: both; }
     border-bottom: 3px solid #434a52;
 }
 
-#login form span {
+.login-tag form span {
     background-color: #363b41;
     border-radius: 3px 0px 0px 3px;
     border-right: 3px solid #434a52;
@@ -55,7 +55,7 @@ after { clear: both; }
     height: 50px;
 }
 
-#login form input[type="text"] {
+.login-tag form input[type="text"] {
     background-color: #3b4148;
     border-radius: 0px 3px 3px 0px;
     color: #a9a9a9;
@@ -65,7 +65,7 @@ after { clear: both; }
     height: 50px;
 }
 
-#login form input[type="password"] {
+.login-tag form input[type="password"] {
     background-color: #3b4148;
     border-radius: 0px 3px 3px 0px;
     color: #a9a9a9;
@@ -75,7 +75,7 @@ after { clear: both; }
     height: 50px;
 }
 
-#login form input[type="submit"] {
+.login-tag form input[type="submit"] {
     background: #b5cd60;
     border: 0;
     width: 100%;
@@ -85,7 +85,7 @@ after { clear: both; }
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
-#login form input[type="submit"]:hover {
+.login-tag form input[type="submit"]:hover {
     background: #16aa56;
 }
 

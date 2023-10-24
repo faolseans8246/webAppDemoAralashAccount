@@ -16,19 +16,18 @@ public class BazaTable implements Serializable {
     @Column(unique = true, name = "users_login_id")
     private long id;
 
-    @Column(unique = true, name = "users_login")
-    private String login;
+    @Column(name = "users_login")
+    public String logins;
 
-    @Column(unique = false, name = "users_parol")
-    private String parol;
+    @Column(name = "users_parol")
+    public String parol;
 
 
     public BazaTable() {
     }
 
-    public BazaTable(long id, String login, String parol) {
-        this.id = id;
-        this.login = login;
+    public BazaTable(String logins, String parol) {
+        this.logins = logins;
         this.parol = parol;
     }
 
@@ -40,12 +39,12 @@ public class BazaTable implements Serializable {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getLogins() {
+        return logins;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setLogins(String logins) {
+        this.logins = logins;
     }
 
     public String getParol() {

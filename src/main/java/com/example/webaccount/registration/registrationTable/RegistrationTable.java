@@ -8,13 +8,16 @@ import java.io.Serializable;
 
 @Entity
 @Data
-@Table(name = "registration_users")
+@Table(name = "registrationUser")
 public class RegistrationTable implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "User_id", unique = true)
     private long id;
+
+    @Column(unique = true, name = "user_login")
+    private String username;
 
     @Column(unique = true, name = "user_email")
     private String email;
@@ -29,8 +32,9 @@ public class RegistrationTable implements Serializable {
     public RegistrationTable() {
     }
 
-    public RegistrationTable(long id, String email, String password, String confirm_password) {
+    public RegistrationTable(long id, String username, String email, String password, String confirm_password) {
         this.id = id;
+        this.username = username;
         this.email = email;
         this.password = password;
         this.confirm_password = confirm_password;
@@ -42,6 +46,14 @@ public class RegistrationTable implements Serializable {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -67,5 +79,5 @@ public class RegistrationTable implements Serializable {
     public void setConfirm_password(String confirm_password) {
         this.confirm_password = confirm_password;
     }
-
+    
 }

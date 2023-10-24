@@ -24,7 +24,7 @@ public class RegistrationController {
 
     @GetMapping("/goToHome")
     public String goToHome() {
-        return "/home/login/loginPage";
+        return "/home/homePage";
     }
 
     @GetMapping("/goToSign")

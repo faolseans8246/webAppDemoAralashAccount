@@ -28,5 +28,11 @@ public class LoginController {
     public String goToHomePage() {
         return "/home/homePage";
     }
+
+
+    @GetMapping("/goToSignUp")
+    public String goToSignUp() {
+        return "/home/registration/registrationPage";
+    }
     
 }

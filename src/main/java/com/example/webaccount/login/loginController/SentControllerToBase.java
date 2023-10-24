@@ -22,7 +22,7 @@ public class SentControllerToBase {
         bazaTable.setParol(parol);
 
         this.rootService.saveLogins(logins, parol);
-        return "/home/login/loginPage";
+        return "/home/dashboard/dashboardPage";
     }
 
     @GetMapping("/toHomePage")
